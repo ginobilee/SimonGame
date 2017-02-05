@@ -1,0 +1,39 @@
+﻿<html>
+	<head>	
+		<title>Simon Game</title>
+		<script src="js/jquery.min.js"></script>	
+		<script src="js/jsjs.js"></script>		
+		
+		<link rel = 'stylesheet' href = 'css/style.css'>
+	</head>
+	
+	<body>
+			<div class = 'game' >
+				
+				<div id = 'keys' class = 'off'>
+					<button class = 'key btn0'  id = 'key0' value = '0'></button>
+					<button class = 'key btn1' id = 'key1' value = '1'></button>
+					<button class = 'key btn2' id = 'key2' value = '2'></button>
+					<button class = 'key btn3' id = 'key3' value = '3'></button>
+				</div>
+				
+				<div class = 'panel'>
+					<h1>Simon Game</h1>	
+					<div class = 'screen'><p id='count'></p></div>	
+					<div class = 'off' id = 'keysInPanel'>
+							<button  id="start"></button><label for = 'start'>Start</label>
+							<div id="strict" class="inline gray"><span>Strict</span></div>
+					</div>
+						
+						<div class = 'lastLine' id = 'sw'>
+							<p class = 'inline' id = 'off'>Off</p>
+							<div class = 'inline' id = 'pw-sw'></div>
+							<p class = 'inline' id = 'on'>On</p>
+						</div>	
+						
+				</div>
+
+				
+			</div><!--game-->
+	</body>
+</html>

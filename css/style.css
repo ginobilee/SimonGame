@@ -1,0 +1,258 @@
+﻿/* Basic Reset */
+html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed, 
+ figure, figcaption, footer, header, hgroup, 
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+ 	margin: 0;
+ 	padding: 0;
+ 	border: 0;
+ 	font-size: 100%;
+ 	font: inherit;
+ 	vertical-align: baseline;
+  
+   /* Disable mouse selection */
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+
+  /* Rules below not implemented in browsers yet */
+  -o-user-select: none;
+  user-select: none;
+ }
+body{
+	background-color:#99A5C2;	
+	margin:0 auto;
+	font-size:20px;
+	color:black;
+	
+	font-family:Impact;
+}
+
+.game{	
+	position:relative;
+	background-color:green;
+	width:500px;
+	height:500px;
+	border:30px solid #333;
+	border-radius:300px;
+	margin-top:60px;
+	margin-left:auto;
+	margin-right:auto;
+	overflow:hidden;
+}
+.key{
+	float:left;
+	width:250px;
+	height:250px;
+	z-index:-999;
+	cursor:pointer;	
+	border:none;
+	outline:none;
+}
+h1{
+	font-size:34px;
+}
+.btn0{
+	background:#781111;
+	box-shadow:inset -8px -8px 3px rgba(9,9,9,0.5);
+}
+button.btn1{
+	background:#074E07;
+	box-shadow:inset 8px -8px 3px rgba(9,9,9,0.5);
+}
+button.btn2{
+	background:#0A0A5C;
+	box-shadow:inset -8px 8px 3px rgba(9,9,9,0.5);
+}
+button.btn3{
+	background:#826510;
+	box-shadow:inset 8px 8px 3px rgba(9,9,9,0.5);
+}
+#key0:active{
+	background:#FC0B0B;
+}
+#key1:active{
+	background:#33ff33;
+}
+#key2:active{
+	background:#3333ff;
+}
+#key3:active{
+	background:#ffcc33;
+}
+
+button.flash0{
+	background:#FD0D0D;
+	box-shadow:inset -8px -8px 3px rgba(9,9,9,0.5);
+	transition:background 0.5s;	
+}
+button.flash1{
+	background:#03FE03;
+	box-shadow:inset 8px -8px 3px rgba(9,9,9,0.5);
+	transition:background 0.5s;	
+}
+button.flash2{
+	background:#0202FC;
+	box-shadow:inset -8px 8px 3px rgba(9,9,9,0.5);
+	transition:background 0.5s;	
+}
+button.flash3{
+	background:#FEBE02;
+	box-shadow:inset 8px 8px 3px rgba(9,9,9,0.5);
+	transition:background 0.5s;	
+}
+div.panel{
+	position:absolute;
+	left:90px;
+	top:90px;
+	width:280px;
+	height:280px;
+	background:#ccc;
+	border:20px solid #333;
+	border-radius:200px;
+	text-align:center;
+	color:black;
+	z-index:9;
+}
+div.panel h1{
+	margin-top:50px;
+}
+div.screen{
+	display:inline-block;
+	margin-top:10px;
+	margin-left:0px;
+	margin-right:10px;	
+	width:60px;
+	height:40px;
+	background:#32050C;
+	z-index:99;	
+	border:6px solid #333;
+	border-radius:10px;
+	color:#f11;
+	padding-bottom:20px;
+	font-size:33px;
+	vertical-align:middle;
+}
+div.screen p{
+	position:relative;
+	top:10px;
+}
+
+#keysInPanel{
+	display:inline-block;
+	vertical-align:bottom;
+}
+#keysInPanel label{
+	margin-left:3px;
+	margin-right:10px;
+}
+.on{	
+	pointer-events: click;
+	cursor:pointer;	
+}
+.off{
+	pointer-events: none;
+}
+#keysInPanel button{
+	background:#9F0304;
+	width:25px;
+	height:25px;
+	border-radius:40px;
+	outline:none;
+	border:4px solid #333;
+	box-shadow:1px 2px 5px black;
+	margin-bottom:20px;
+	transition: all 0.2s ease-out;
+}
+
+#keysInPanel button:active{
+	background:#FC0102;
+}
+#sw{
+	position:relative;
+	left:105px;
+	top:12px;
+	width:60px;
+	height:25px;
+	border:5px solid #333;
+	background:black;
+	border-radius:5px;
+	text-align:left;
+}
+.inline{
+	display:inline-block;
+}
+#off{
+	position:absolute;
+	left:-40px;
+	font-size:25px;
+}
+#on{
+	position:absolute;
+	left:70px;
+	font-size:25px;
+}
+#pw-sw{
+	position:relative;	
+	width:30px;
+	height:25px;
+	background:green;
+	border-radius:5px;
+	padding:0;
+}
+.turnup{
+	left:30px;
+}
+	
+
+/*checkbox for start and strict*/
+#strict{
+	width: 20px;
+	height: 20px;
+	padding-right: 0px;
+	border-radius: 15px;
+	display: inline-block;
+	position: relative;
+	margin-right: 30px;
+}
+#strict span{
+	position:absolute;
+	left:24px;
+}
+.gray{
+	background:gray;
+}
+.yellow{
+	background:yellow;
+}
+
+@media screen and (max-width: 500px){
+
+  .game {
+    top: 40px;
+    
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    
+    -o-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+    
+    left: 42%;
+    margin-left: -142px;
+  }
+}
